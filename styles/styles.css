@@ -1,0 +1,294 @@
+/* importamos tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --primary-color: #FFc222;
+    --secodary-color: #00a149;
+    --text-color: #b0b0b0;
+    --black-color: #1E1D23;
+    --primary-font: 'Roboto', san-serif;
+    --secondary-font: 'Quicksand', san-serif;
+}
+
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+}
+
+
+a:hover{
+    color: var(--primary-color) !important;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+
+/* Estilos al scrools */ /* AGREGARLOS CUANDO SE PUEDA VISUALIZAR */
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--secodary-color);
+}
+
+
+
+
+
+
+
+/* STYLES principales de css */
+
+
+h1{
+    font-size: 3.625rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow:5px 0 8px #000 ;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize; /* uppercase o lowercase */
+    font-family: var(--secondary-font);
+    color: var(--secodary-color);
+    line-height: 3rem;
+
+}
+
+
+h4{
+    color: var(--secodary-color);
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+p{
+
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    
+}
+
+
+
+
+.main-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem ;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--black-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 10px 11px rgb(0, 0, 0 / 19%);
+
+    transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.navigation-wrap .main-btn{
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+    
+}
+
+
+
+
+/* Continuacion CLASE 9 a CLASE 10 */
+
+.wrapper {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+}
+
+.text-contet{
+    width: 70%;
+    margin: auto;
+}
+
+
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item{
+    padding: 0 0.625rem;
+    transition: all 0.3s linear;
+}
+
+.navbar-toggler:focus{
+    outline: unset; 
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover,
+.nav-link:active{
+    color: var(--primary-color);
+}
+
+
+/* AGREGAR PRONTO ESTILOS DE SCROOLL */
+
+
+
+/* TOP-BANNER DESING */
+
+.top-banner{
+    width: 100%;
+    background: url('../images/bg/bg-1.jpg') no-repeat center ;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+}
+
+.top-banner p{
+    color: #fff;
+}
+
+
+/* OUR-DESING MENU */
+
+.our-menu .card{
+    border: none;
+}
+
+.our-menu .link_category_product{
+    position: relative;
+    display: block;
+    z-index: 1;
+    
+}
+
+.our-menu .link_category_product::before{
+
+    
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px dotted var(--secodary-color);
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    background: var(--primary-color);
+    transition: all .4s ease;
+}
+
+.card:hover .link_category_product::before{
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+
+.our-menu .cat-title a{
+    text-align: center;
+    font-size: 0.8125rem;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+
+/* ABOUT SECTION */
+
+.about-section{
+    background: var(--black-color);
+}
+
+
+.about-section .card,
+.about-section .card img{
+    border-radius: 0.625rem;
+}
+
+.about-section .text-sec{
+    padding-left: 2rem;
+}
+
+.food-type{
+    padding-top: 3.25rem;
+}
+
+.food-type ul li{
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.food-type ul li::before{
+    
+    position: absolute;
+    left: -2.1875rem;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    font-weight: 900;
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+}
+
