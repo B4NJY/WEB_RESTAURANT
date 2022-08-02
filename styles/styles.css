@@ -292,3 +292,118 @@ p{
     vertical-align: middle;
 }
 
+
+.testimonial-section{
+    background: var(--secodary-color);
+}
+
+.testimonial-section h2{
+    color: #fff;
+}
+
+.testimonial-section .carousel-item{
+    margin-top: 3rem;
+    padding: 10rem 3.125rem;
+    background-color: var(--black-color);
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+
+.testimonial-section .carousel-item img{
+    max-width: 7rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
+}
+
+.testimonial-section .carousel-item p{
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    font-weight: 300;
+    color: #fff;
+    padding: 0 11% 0.625rem;
+}
+
+
+.testimonial-section .carousel-indicators{
+    bottom: -2.8125rem;
+}
+
+.testimonial-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+
+.testimonial-section .carousel-indicators button.active{
+    opacity: 1;
+}
+
+
+.footer{
+    background: var(--black-color);
+}
+
+/*  .footer .footer-link{
+font-size: 18rem;
+}  */
+
+
+
+.footer .footer-social a i{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.footer .footer-social a:hover i{
+    color: var(--primary-color);
+}
+
+
+.newsletter .form-control{
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    width: 100%;
+    border-radius: 0;
+    background: transparent;
+    border: 0.1875rem solid #fff;
+    color: #fff ;
+    font-weight: 700;
+}
+
+.newsletter .main-btn{
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    border-radius: 0;
+    background-color: #fff;
+    border: 0.1875rem solid #fff;
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+
+.newsletter:hover .form-control{
+    border:  0.1875rem solid var(--primary-color);
+    
+}
+
+
+.newsletter:hover .main-btn{
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+}
+
+
+.newsletter .form-control:hover,
+.newsletter .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
